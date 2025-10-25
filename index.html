@@ -13,12 +13,74 @@
         padding-top: 50px;
         margin: 50px;
     }
+     <style>
+        div {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px;
+        }
+
+        button {
+            padding: 10px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            background-color: lightslategray;
+            border: none;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            transition:
+                background-color 0.3s ease,
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        button:hover {
+            background-color: grey;
+            transform: translateY(3px) scale(1.03);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </style>
 <body>
+    <!-- Question 01 -->
+     =============================  Question 01 =============================
     <h1 id="h-one">Welcome to JavaScript and HTML</h1>
     <p id="p-one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ipsum hic, dolorem ad praesentium quasi laboriosam et magnam commodi <br>
          illum eaque saepe fugiat tempora ratione ipsa! Accusantium exercitationem pariatur aspernatur.</p>
+    <!-- Question 02 -->
+     =============================  Question 02 =============================
+     <h1 id="switch">On</h1>
+     <button id="btn-swtich" onclick="ChangeState()">Turn Off</button>
+     <br>
+     <br>
 
+
+<!-- Question 03 -->
+        =============================  Question 03 =============================
+            <h1>Change the Website Background Color</h1>
+            <div>
+                <button onclick="ChangeColor('lightslategray')">Light Slategray</button>
+                <button onclick="ChangeColor('lightblue')">Light BLUE</button>
+                <button onclick="ChangeColor('orange')">ORANGE</button>
+                <button onclick="ChangeColor('grey')">GREY</button>
+                <button onclick="ChangeColor('white')">WHITE</button>
+                <button onclick="ChangeColor('yellow')">YELLOW</button>
+                <button onclick="ChangeColor('purple')">PURPLE</button>
+                <button onclick="ChangeColor('pink')">PINK</button>
+                <button onclick="ChangeColor('teal')">TEAL</button>
+        </div>
+        
+<!-- Question 04 -->
+ =============================  Question 04 =============================
+ <h1 id="welcome" onclick="welcome()">Welcome to SMIT Quetta</h1>
+
+ <!-- Question 05 -->
+    =============================  Question 05 =============================
+    
 
     <script src="./app.js"></script>
 </body>
